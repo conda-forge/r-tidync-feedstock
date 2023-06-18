@@ -1,11 +1,11 @@
-About r-tidync
-==============
+About r-tidync-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-tidync-feedstock/blob/main/LICENSE.txt)
 
 Home: https://docs.ropensci.org/tidync/
 
 Package license: GPL-3.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-tidync-feedstock/blob/main/LICENSE.txt)
 
 Summary: Tidy tools for 'NetCDF' data sources. Explore the contents of a 'NetCDF' source (file or URL) presented as variables organized by grid with a database-like interface. The hyper_filter() interactive function translates the filter value or index expressions to array-slicing form. No data is read until explicitly requested, as a data frame or list of arrays via hyper_tibble() or hyper_array().
 

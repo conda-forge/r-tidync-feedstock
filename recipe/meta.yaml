@@ -1,4 +1,4 @@
-{% set version = "0.3.0" %}
+{% set version = "0.4.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/tidync_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/tidync/tidync_{{ version }}.tar.gz
-  sha256: c325eb679e8f2b726348b4dd324c28bfa49de2375cab5fd8eab29e9c07441171
+  sha256: 04ccead1e9bbd09dba1cc071f8d7d55a8d511573c1bbb7c0577642d6d915a666
 
 build:
   merge_build_host: true  # [win]
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/

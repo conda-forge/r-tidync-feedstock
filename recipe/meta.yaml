@@ -1,4 +1,4 @@
-{% set version = "0.4.0" %}
+{% set version = "0.5.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/tidync_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/tidync/tidync_{{ version }}.tar.gz
-  sha256: 04ccead1e9bbd09dba1cc071f8d7d55a8d511573c1bbb7c0577642d6d915a666
+  sha256: b2b2a0b407b0b39fd1acfda1ae15ec594dfb6b0bbf7834d527e7409139d7f7a4
 
 build:
-  number: 2
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -54,8 +54,8 @@ test:
 about:
   home: https://docs.ropensci.org/tidync/
   license: GPL-3.0-only
-  summary: Tidy tools for 'NetCDF' data sources. Explore the contents of a 'NetCDF' source (file or URL) presented as variables organized by grid with a database-like interface. The hyper_filter() interactive function translates the filter value or index expressions to array-slicing form. No data is read until explicitly
-    requested, as a data frame or list of arrays via hyper_tibble() or hyper_array().
+  summary: Tidy tools for 'NetCDF' data sources. Explore the contents of a 'NetCDF' source (file or URL) presented as variables organized by grid with a database-like interface. The hyper_filter() interactive function translates the filter value or index expressions to array-slicing form. No data is read until 
+    explicitly requested, as a data frame or list of arrays via hyper_tibble() or hyper_array().
   license_family: GPL3
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
